@@ -4,28 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nested Tables</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     .html-cell {
       background-color: black;
       color: white;
-      text-align: center;
-      font-weight: bold;
     }
     table, th, td {
       border: 1px solid black;
       border-collapse: collapse;
-      padding: 8px;
+      padding: 6px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Main Table -->
+  <!-- Main Table (table #1) -->
   <table>
     <tr>
       <td>
-        <!-- Nested Table 1 -->
+        <!-- Nested Table 1 (table #2) -->
         <table>
           <thead>
             <tr>
@@ -37,7 +34,7 @@
         </table>
       </td>
       <td>
-        <!-- Nested Table 2 -->
+        <!-- Nested Table 2 (table #3) -->
         <table>
           <thead>
             <tr>
@@ -51,7 +48,7 @@
     </tr>
     <tr>
       <td>
-        <!-- Nested Table 3 with list -->
+        <!-- Nested Table 3 (table #4) -->
         <table>
           <thead>
             <tr>
@@ -74,7 +71,7 @@
         </table>
       </td>
       <td>
-        <!-- Nested Table 4 with black HTML cell -->
+        <!-- Nested Table 4 (table #5) -->
         <table>
           <thead>
             <tr>
@@ -85,7 +82,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="html-cell" colspan="3">HTML</td>
+              <td colspan="3" class="html-cell">HTML</td>
             </tr>
           </tbody>
         </table>
