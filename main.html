@@ -7,7 +7,7 @@
     table, th, td {
       border: 1px solid black;
       border-collapse: collapse;
-      padding: 8px;
+      padding: 6px;
       text-align: center;
     }
     .html-cell {
@@ -18,17 +18,36 @@
 </head>
 <body>
 
-  <!-- Main Table -->
+  <!-- Main Table (1st table) -->
   <table>
     <tr>
-      <!-- Nested Table 1 -->
       <td>
+        <!-- Nested Table 1 (2nd table - index 1) -->
+        <table>
+          <thead>
+            <tr>
+              <th>Nested Table 2</th>
+              <th>Column 1</th>
+              <th>Column 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1</td>
+              <td>Data 1</td>
+              <td>Data 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td>
+        <!-- Nested Table 2 (3rd table - just any content) -->
         <table>
           <thead>
             <tr>
               <th>Nested Table 1</th>
-              <th>Column 1</th>
-              <th>Column 2</th>
+              <th>Column A</th>
+              <th>Column B</th>
             </tr>
           </thead>
           <tbody>
@@ -40,31 +59,11 @@
           </tbody>
         </table>
       </td>
-
-      <!-- Nested Table 2 -->
-      <td>
-        <table>
-          <thead>
-            <tr>
-              <th>Nested Table 2</th>
-              <th>Column 1</th>
-              <th>Column 2</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Row B</td>
-              <td>Data B1</td>
-              <td>Data B2</td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
     </tr>
 
     <tr>
-      <!-- Nested Table 3 with List -->
       <td>
+        <!-- Nested Table 3 (4th table - includes list) -->
         <table>
           <thead>
             <tr>
@@ -86,9 +85,8 @@
           </tbody>
         </table>
       </td>
-
-      <!-- Nested Table 4 with black HTML cell -->
       <td>
+        <!-- Nested Table 4 (5th table - with black HTML cell) -->
         <table>
           <thead>
             <tr>
@@ -99,7 +97,7 @@
           </thead>
           <tbody>
             <tr>
-              <td class="html-cell" colspan="3">HTML</td>
+              <td colspan="3" class="html-cell">HTML</td>
             </tr>
           </tbody>
         </table>
@@ -109,3 +107,4 @@
 
 </body>
 </html>
+
