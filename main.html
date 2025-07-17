@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Table</title>
+  <title>Nested Tables</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     .html-cell {
@@ -15,17 +15,17 @@
     table, th, td {
       border: 1px solid black;
       border-collapse: collapse;
-      padding: 10px;
+      padding: 8px;
     }
   </style>
 </head>
 <body>
 
   <!-- Main Table -->
-  <table style="width: 100%; height: 100%">
+  <table>
     <tr>
-      <!-- Nested Table 1 -->
       <td>
+        <!-- Nested Table 1 -->
         <table>
           <thead>
             <tr>
@@ -34,23 +34,10 @@
               <th>Column 2</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>Row 1</td>
-              <td>Data 1</td>
-              <td>Data 2</td>
-            </tr>
-            <tr>
-              <td>Row 2</td>
-              <td>Data 3</td>
-              <td>Data 4</td>
-            </tr>
-          </tbody>
         </table>
       </td>
-
-      <!-- Nested Table 2 -->
       <td>
+        <!-- Nested Table 2 -->
         <table>
           <thead>
             <tr>
@@ -59,25 +46,12 @@
               <th>Column 2</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>Row 1</td>
-              <td>Data A</td>
-              <td>Data B</td>
-            </tr>
-            <tr>
-              <td>Row 2</td>
-              <td>Data C</td>
-              <td>Data D</td>
-            </tr>
-          </tbody>
         </table>
       </td>
     </tr>
-
     <tr>
-      <!-- Nested Table 3 with List -->
       <td>
+        <!-- Nested Table 3 with list -->
         <table>
           <thead>
             <tr>
@@ -88,8 +62,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Row 1</td>
-              <td colspan="2">
+              <td colspan="3">
                 <ul>
                   <li>List item 1</li>
                   <li>List item 2</li>
@@ -100,9 +73,8 @@
           </tbody>
         </table>
       </td>
-
-      <!-- Nested Table 4 with styled "HTML" cell -->
       <td>
+        <!-- Nested Table 4 with black HTML cell -->
         <table>
           <thead>
             <tr>
@@ -113,8 +85,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Row 1</td>
-              <td class="html-cell" colspan="2">HTML</td>
+              <td class="html-cell" colspan="3">HTML</td>
             </tr>
           </tbody>
         </table>
