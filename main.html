@@ -2,27 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nested Tables</title>
   <style>
-    .html-cell {
-      background-color: black;
-      color: white;
-    }
     table, th, td {
       border: 1px solid black;
       border-collapse: collapse;
-      padding: 6px;
+      padding: 8px;
+      text-align: center;
+    }
+    .html-cell {
+      background-color: black;
+      color: white;
     }
   </style>
 </head>
 <body>
 
-  <!-- Main Table (table #1) -->
+  <!-- Main Table -->
   <table>
     <tr>
+      <!-- Nested Table 1 -->
       <td>
-        <!-- Nested Table 1 (table #2) -->
         <table>
           <thead>
             <tr>
@@ -31,10 +31,18 @@
               <th>Column 2</th>
             </tr>
           </thead>
+          <tbody>
+            <tr>
+              <td>Row A</td>
+              <td>Data A1</td>
+              <td>Data A2</td>
+            </tr>
+          </tbody>
         </table>
       </td>
+
+      <!-- Nested Table 2 -->
       <td>
-        <!-- Nested Table 2 (table #3) -->
         <table>
           <thead>
             <tr>
@@ -43,12 +51,20 @@
               <th>Column 2</th>
             </tr>
           </thead>
+          <tbody>
+            <tr>
+              <td>Row B</td>
+              <td>Data B1</td>
+              <td>Data B2</td>
+            </tr>
+          </tbody>
         </table>
       </td>
     </tr>
+
     <tr>
+      <!-- Nested Table 3 with List -->
       <td>
-        <!-- Nested Table 3 (table #4) -->
         <table>
           <thead>
             <tr>
@@ -70,8 +86,9 @@
           </tbody>
         </table>
       </td>
+
+      <!-- Nested Table 4 with black HTML cell -->
       <td>
-        <!-- Nested Table 4 (table #5) -->
         <table>
           <thead>
             <tr>
@@ -82,7 +99,7 @@
           </thead>
           <tbody>
             <tr>
-              <td colspan="3" class="html-cell">HTML</td>
+              <td class="html-cell" colspan="3">HTML</td>
             </tr>
           </tbody>
         </table>
